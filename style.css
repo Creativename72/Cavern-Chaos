@@ -2,3 +2,47 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+#playerDisplay{
+  background-color: lightblue;
+}
+
+body {
+  background-image: url('./images/cavebg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div { /*#795eff11*/
+  background-color: #ffffff;
+  border: 1px solid #1c2333;
+  /*position:absolute;*/
+  font-size:23px
+}
+p {
+  background-color: #ffffff;
+}
+
+.actionLogCont {
+  left:900px;
+  width:200px;
+  height:345px;
+}
+.currentTileCont {
+  left:900px;
+  width:200px;
+  height:100px;
+  top:480px;
+}
+.currentGoldCont {
+  left:1130px;
+  width:300px;
+  height:100px;
+}
+.equipmentCont {
+  left:1130px;
+  top: 250px;
+  width:300px;
+  height:330px;
+}

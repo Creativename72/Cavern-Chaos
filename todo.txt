@@ -1,14 +1,1 @@
-todo:
-player system
- - board read system
-
-tile system
- - render system
-
-done:
-board shape
-gold system
-turn system
- - move system
-
-fix moving to null bug
+diamond spawn locations

@@ -7,6 +7,16 @@ export class HexMap {
   constructor(size) {
     this.map = [];
     constructMap(this.map,size);
+    var yList = [3,5,7,9,11];
+    var rand = Math.floor(Math.random() * 5);
+    for (var i in yList) {
+      this.getHexagon(7,yList[i]).treasure = true;
+    }
+    this.getHexagon(7,yList[rand]).type = "diamond";
+    this.getHexagon(0,7).type = "exit";
+    this.getHexagon(0,7).flipped = true;
+    this.getHexagon(14,7).type = "exit";
+    this.getHexagon(14,7).flipped = true;
   }
   
   render() {
@@ -36,10 +46,26 @@ function constructMap(map,size) {
   var xOffset = Math.floor(size/2);
   var xLower = xOffset;
   var xUpper = size + xOffset;
-  for (var y = 0; y < (2*size)-1; y++) {
-    
+  for (var y = 0; y < (2*size)-1; y++) { 
     for (var x = xLower; x < xUpper; x++) {
-      map.push(new Hexagon(x,y));
+      var type = "";
+      //probabilities
+      var b = 20;
+      var cm = 2;
+      var ch = 10;
+      var g = 10;
+      var rand = Math.floor(Math.random()*(b+cm+ch+g));
+      if (rand < b) {
+        type = "blank"
+      } else if (rand < b + cm) {
+        type = "cave monster"
+      } else if (rand < b + cm + ch) {
+        type = "chance"
+      } else {
+        type = "gold"
+      }
+      //console.log(type)
+      map.push(new Hexagon(x,y,type));
     }
     
     if (y < size-1) {
