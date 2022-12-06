@@ -3,7 +3,7 @@ html, body {
   width: 100%;
 }
 
-#playerDisplay{
+#p{
   background-color: lightblue;
 }
 
@@ -14,33 +14,33 @@ body {
   background-size: cover;
 }
 
-div { /*#795eff11*/
+div {
   background-color: #ffffff;
   border: 1px solid #1c2333;
-  /*position:absolute;*/
-  font-size:23px
+  font-size:13px
 }
 p {
-  background-color: #ffffff;
+  background-color: lightblue;
+  margin-left:750px;
+  font-size:20px;
 }
 
-.actionLogCont {
-  left:900px;
-  width:200px;
-  height:345px;
+#myCanvas {
+  position:relative;
+  top:-600px;
 }
-.currentTileCont {
+
+#currentTile {
   left:900px;
   width:200px;
   height:100px;
-  top:480px;
 }
-.currentGoldCont {
+#currentGold {
   left:1130px;
   width:300px;
   height:100px;
 }
-.equipmentCont {
+#equipment {
   left:1130px;
   top: 250px;
   width:300px;

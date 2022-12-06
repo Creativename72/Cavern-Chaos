@@ -1,0 +1,21 @@
+body {
+  background-image: url('./images/menuBG.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+}
+
+#play {
+  position:relative;
+  top:85vh;
+}
+#directions {
+  position:relative;
+  top:85vh;
+  left:28vw;
+}
+#story {
+  position:relative;
+  top:85vh;
+  left:56vw;
+}

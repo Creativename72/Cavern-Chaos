@@ -10,7 +10,7 @@ export class HexMap {
     var yList = [3,5,7,9,11];
     var rand = Math.floor(Math.random() * 5);
     for (var i in yList) {
-      this.getHexagon(7,yList[i]).treasure = true;
+      this.getHexagon(7,yList[i]).treasure = false; //change to true to bring back treasure chests
     }
     this.getHexagon(7,yList[rand]).type = "diamond";
     this.getHexagon(0,7).type = "exit";

@@ -7,7 +7,7 @@ import {Player} from "./player.js";
 import {System} from "./system.js";
 //math constants
 const lineThickness = 3;
-export const scale = 0.58;
+export const scale = .53;
 export const devMode = false;
 //creates board
 export var board = new HexMap(8);

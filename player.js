@@ -17,7 +17,7 @@ export class Player {
     this.y = y;
     //other stuff
     this.color = color;
-    this.gold = 5;
+    this.gold = 3;
     this.movesLeft = 0;
     this.parent = parent;
     //equips
@@ -323,7 +323,8 @@ export class Player {
 
   exit() {
     if (this.hasDiamond) {
-      window.alert("you win!")
+      window.alert("you win!, click ok to go back to main menu.");
+      window.location = "https://cavern-chaos.neildsouza.repl.co/"
     }
   }
 }

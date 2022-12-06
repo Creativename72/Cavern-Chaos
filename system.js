@@ -20,11 +20,10 @@ export class System {
     currentPlayer.rollMoves();
     window.alert("You rolled a " + currentPlayer.movesLeft + "!")
     if (currentPlayer.jackhammer > 0) {
-      var ans = window.prompt("Would you like to use a jackhammer in order to gain 1-3 moves? (y/n)")
-      if (ans == "y") {
-        var rand = Math.floor(Math.random() * 3) + 1
-        window.alert("You gained " + rand + " moves!")
-        currentPlayer.movesLeft += rand;
+      var ans = window.prompt("Would you like to use a jackhammer in order to gain 2 moves? (y/n)")
+      if (ans.substring(0,1).toLowerCase() == "y") {
+        window.alert("You gained 2 moves!")
+        currentPlayer.movesLeft += 2;
       }
     }
     this.updateDisplays();
