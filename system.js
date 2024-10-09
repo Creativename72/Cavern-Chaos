@@ -24,6 +24,7 @@ export class System {
       if (ans.substring(0,1).toLowerCase() == "y") {
         window.alert("You gained 2 moves!")
         currentPlayer.movesLeft += 2;
+        this.jackhammer -= 1;
       }
     }
     this.updateDisplays();
